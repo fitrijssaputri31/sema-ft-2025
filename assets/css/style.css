@@ -1,0 +1,363 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Custom Utilities yang tidak dicover Tailwind secara default */
+.text-gradient {
+    background: linear-gradient(to right, #ffffff, #d1d5db);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.bg-gradient-maroon {
+    background: linear-gradient(to left, rgba(128, 0, 0, 0.2), transparent);
+}
+
+/* Komponen Tombol (Agar HTML lebih bersih) */
+.btn-primary {
+    @apply px-8 py-3 bg-maroon text-white font-bold rounded-lg shadow-lg shadow-maroon/30 transition transform hover:-translate-y-1 hover:bg-red-900 inline-block;
+}
+
+/* Catatan: Karena kita pakai CDN, @apply tidak akan jalan secara native di browser tanpa build tools. 
+   Jadi untuk tombol di atas, kita gunakan class CSS biasa yang meniru utility tailwind: */
+
+/* GANTI BAGIAN INI */
+.btn-primary {
+    padding: 0.75rem 2rem;
+    background-color: #fbbf24; /* Ganti jadi Kuning Emas */
+    color: #0f172a;            /* Teks jadi Navy agar terbaca jelas */
+    font-weight: 800;          /* Sedikit lebih tebal */
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 14px 0 rgba(251, 191, 36, 0.39); /* Shadow emas */
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.btn-primary:hover {
+    background-color: #f59e0b; /* Emas sedikit lebih gelap saat hover */
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(251, 191, 36, 0.23);
+}
+
+.btn-secondary {
+    padding: 0.75rem 2rem;
+    border: 1px solid #fbbf24; /* Gold */
+    color: #fbbf24;
+    font-weight: 700;
+    border-radius: 0.5rem;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.btn-secondary:hover {
+    background-color: #fbbf24;
+    color: #0f172a; /* Navy */
+}
+
+.btn-outline-gold {
+    padding: 0.5rem 1rem;
+    border: 1px solid #fbbf24;
+    color: #fbbf24;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.btn-outline-gold:hover {
+    background-color: #fbbf24;
+    color: #0f172a;
+}
+
+.nav-link {
+    color: #cbd5e1; /* Gray-300 */
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: #fbbf24; /* Gold */
+}
+
+/* --- HERO IMAGE COLLAGE STYLE (REVISI JARAK) --- */
+
+.collage-container {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    height: 400px;    /* Tinggi ditambah (tadi 350px) supaya jarak atas-bawah lebih lega */
+    margin: 20px auto; /* Tambah margin luar biar ga nempel teks */
+}
+
+/* Gambar Pertama (Di Belakang - Naik & Kiri) */
+.hero-img-1 {
+    position: absolute;
+    top: -20px;       /* Geser ke Atas */
+    left: -20px;      /* Geser ke Kiri */
+    width: 70%;       /* Lebar diperkecil (tadi 75%) */
+    height: 240px;
+    object-fit: cover;
+    border-radius: 1rem;
+    transform: rotate(-6deg); /* Miringnya ditambah dikit biar dinamis */
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.5);
+    z-index: 10;
+    transition: transform 0.5s ease;
+}
+
+/* Gambar Kedua (Di Depan - Turun & Kanan) */
+.hero-img-2 {
+    position: absolute;
+    bottom: -20px;    /* Geser ke Bawah */
+    right: -20px;     /* Geser ke Kanan */
+    width: 70%;       /* Lebar diperkecil */
+    height: 240px;
+    object-fit: cover;
+    border-radius: 1rem;
+    transform: rotate(6deg); /* Miring ke kanan */
+    border: 3px solid #fbbf24; /* Bingkai Emas lebih tebal */
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.5);
+    z-index: 20;
+    transition: transform 0.5s ease;
+}
+
+/* Efek Hover Interaktif */
+.collage-container:hover .hero-img-1 {
+    transform: rotate(-8deg) scale(1.02) translate(-10px, -10px); /* Makin menjauh saat hover */
+}
+
+.collage-container:hover .hero-img-2 {
+    transform: rotate(8deg) scale(1.02) translate(10px, 10px);
+}
+
+/* Penyesuaian Mobile */
+@media (max-width: 768px) {
+    .collage-container {
+        height: 300px;
+        max-width: 320px;
+        margin-top: 2rem;
+    }
+    .hero-img-1, .hero-img-2 {
+        height: 180px;
+        width: 75%; /* Di HP kembalikan agak besar biar jelas */
+        top: auto; bottom: auto; left: auto; right: auto; /* Reset posisi manual */
+    }
+    /* Di HP kita atur posisi lebih sederhana */
+    .hero-img-1 { top: 0; left: 0; }
+    .hero-img-2 { bottom: 0; right: 0; }
+}
+
+
+.glow-effect {
+    position: absolute;
+    width: 20rem;
+    height: 20rem;
+    background-color: rgba(251, 191, 36, 0.1); /* Gold glow */
+    border-radius: 9999px;
+    filter: blur(64px);
+    z-index: -10;
+}
+
+/* Animasi Sederhana */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fade-in-up {
+    animation: fadeInUp 0.8s ease-out forwards;
+    opacity: 0; /* Mulai invisible */
+}
+
+.animate-fade-in-right {
+    animation: fadeInUp 1s ease-out forwards; /* Reuse fadeInUp for simplicity or create slideInRight */
+    opacity: 0;
+}
+
+.delay-100 { animation-delay: 0.1s; }
+.delay-200 { animation-delay: 0.2s; }
+.delay-300 { animation-delay: 0.3s; }
+/* --- STYLE SECTION FILOSOFI --- */
+
+/* Background Navy Light khusus section ini agar beda dengan header */
+.bg-navy-light {
+    background-color: #162032; /* Sedikit lebih terang dari #0f172a */
+}
+
+/* Kartu Filosofi */
+.filosofi-card {
+    background-color: rgba(30, 41, 59, 0.6); /* Transparan gelap */
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 2rem;
+    border-radius: 1rem;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s ease;
+}
+
+/* Efek Hover pada Kartu */
+.filosofi-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(251, 191, 36, 0.5); /* Border jadi Gold saat hover */
+    box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+}
+
+/* Lingkaran Ikon */
+.icon-wrapper {
+    width: 3.5rem;
+    height: 3.5rem;
+    background-color: #fbbf24; /* Gold */
+    border-radius: 0.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    transition: transform 0.4s ease;
+}
+
+/* Animasi Ikon saat Hover */
+.group:hover .icon-wrapper {
+    transform: rotate(6deg) scale(1.1);
+}
+/* --- STYLE STRUKTUR ORGANISASI --- */
+
+/* Kartu Pengurus Inti (Foto Bulat) */
+.org-card {
+    background-color: #1e293b; /* Navy Light */
+    padding: 1.5rem;
+    border-radius: 1rem;
+    width: 100%;
+    max-width: 250px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+}
+
+.org-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    border-color: #fbbf24; /* Gold border on hover */
+}
+
+/* Bingkai Foto */
+.img-box {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid #fbbf24; /* Lingkaran Gold */
+    box-shadow: 0 0 15px rgba(251, 191, 36, 0.2);
+}
+
+.img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Kartu Departemen (Kotak Minimalis) */
+.dept-card {
+    background: linear-gradient(145deg, #1e293b, #0f172a);
+    border-radius: 0.75rem;
+    border-left: 4px solid #800000; /* Aksen Maroon di kiri */
+    transition: all 0.3s ease;
+}
+
+.dept-card:hover {
+    background: #800000; /* Berubah jadi Maroon saat hover */
+    transform: translateY(-3px);
+}
+
+.dept-card:hover h4, 
+.dept-card:hover p {
+    color: white !important; /* Teks jadi putih semua saat hover */
+}
+
+/* --- TAMBAHAN STYLE ANGGOTA --- */
+
+/* Kartu Anggota (Lebih kecil & Sederhana) */
+.member-card {
+    background-color: rgba(30, 41, 59, 0.4); /* Background lebih transparan */
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 0.75rem;
+    padding: 1rem;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.member-card:hover {
+    background-color: rgba(30, 41, 59, 0.8);
+    border-color: #fbbf24;
+    transform: translateY(-3px);
+}
+
+/* Foto Anggota */
+.member-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: 0 auto 0.75rem auto;
+    object-fit: cover;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    transition: border-color 0.3s;
+}
+
+.member-card:hover .member-img {
+    border-color: #fbbf24; /* Lingkaran jadi emas saat hover */
+}
+
+/* Nama Anggota */
+.member-name {
+    color: #e2e8f0;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+/* --- TIMELINE STYLING --- */
+
+/* Posisi Default Garis (Desktop) */
+.border-2-2 {
+    border-width: 2px;
+}
+
+/* Responsif untuk Mobile (Layar kecil < 768px) */
+@media (max-width: 768px) {
+    /* Pindahkan garis ke kiri banget */
+    .border-2-2 {
+        left: 20px !important; 
+    }
+    
+    /* Semua item jadi rata kanan */
+    .right-timeline, .left-timeline {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+    
+    /* Reset lebar kolom kosong */
+    .right-timeline .order-1:first-child, 
+    .left-timeline .order-1:first-child {
+        width: 0;
+    }
+    
+    /* Lebarkan kotaknya */
+    .right-timeline .w-5\/12, 
+    .left-timeline .w-5\/12 {
+        width: calc(100% - 60px); /* Full width minus space buat ikon */
+        margin-left: 60px;
+    }
+    
+    /* Posisi Ikon Angka */
+    .z-20 {
+        left: 4px;
+        position: absolute;
+    }
+}

@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEMA FT UNMA 2025/2026 - Pioneer Reformasi</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: {
+                            DEFAULT: '#0f172a', 
+                            light: '#1e293b',
+                        },
+                        maroon: {
+                            DEFAULT: '#800000', 
+                            hover: '#991b1b',
+                        },
+                        gold: {
+                            DEFAULT: '#fbbf24', 
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Montserrat', 'sans-serif'], 
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-navy text-white">
+
+    <nav class="fixed w-full z-50 bg-navy/90 backdrop-blur-sm border-b border-white/10">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold tracking-wider">
+                SEMA <span class="text-maroon">FT</span>
+            </a>
+            
+            <div class="hidden md:flex space-x-8 items-center">
+                <a href="#home" class="nav-link active">Beranda</a>
+                <a href="#filosofi" class="nav-link">Filosofi</a>
+                <a href="#struktur" class="nav-link">Struktur</a>
+                <a href="#proker" class="nav-link">Proker</a>
+                <a href="#kontak" class="btn-outline-gold">Kontak</a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="relative min-h-screen flex items-center pt-20 overflow-hidden">
+        <div class="absolute top-0 right-0 w-1/3 h-full bg-gradient-maroon pointer-events-none"></div>
+
+        <div class="container mx-auto px-6 flex flex-col-reverse md:flex-row items-center relative z-10">
+            
+            <div class="w-full md:w-1/2 mt-10 md:mt-0">
+                <p class="text-gold font-semibold tracking-widest mb-2 animate-fade-in-up">PERIODE 2025 - 2026</p>
+                
+                <h1 class="text-5xl md:text-7xl font-extrabold leading-tight mb-4 animate-fade-in-up delay-100">
+                    KABINET <br>
+                    <span class="text-gradient">PIONEER</span>
+                    <span class="text-maroon">REFORMASI</span>
+                </h1>
+                
+                <p class="text-gray-300 text-lg mb-8 leading-relaxed max-w-lg animate-fade-in-up delay-200">
+                    Membawa semangat pelopor perubahan, berinovasi, dan bergerak maju menuju sistem yang lebih baik untuk Fakultas Teknik Universitas Majalengka.
+                </p>
+
+                <div class="flex space-x-4 animate-fade-in-up delay-300">
+                    <a href="#proker" class="btn-primary">Lihat Program Kerja</a>
+                    <a href="#filosofi" class="btn-secondary">Tentang Kami</a>
+                </div>
+            </div>
+
+            <div class="w-full md:w-1/2 flex justify-center relative animate-fade-in-right mt-12 md:mt-0">
+                
+                <div class="collage-container">
+                    <div class="glow-effect"></div>
+                    
+                    <img src="assets/img/hero-team-2.jpg.jpeg" 
+                        onerror="this.src='https://via.placeholder.com/600x400'" 
+                        alt="Foto Kabinet 1" 
+                        class="hero-img-1">
+                        
+                    <img src="assets/img/hero-team.jpg.jpeg" 
+                        onerror="this.src='https://via.placeholder.com/600x400'" 
+                        alt="Foto Kabinet 2" 
+                        class="hero-img-2">
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section id="filosofi" class="py-20 bg-navy-light relative">
+        <div class="container mx-auto px-6">
+            
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">
+                    MAKNA <span class="text-gold">FILOSOFI</span>
+                </h2>
+                <div class="w-24 h-1 bg-maroon mx-auto rounded-full"></div>
+                <p class="text-gray-400 mt-4 max-w-2xl mx-auto">
+                    Setiap elemen dalam identitas visual kami memiliki makna mendalam yang mencerminkan semangat Kabinet Pioneer Reformasi.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <div class="filosofi-card group">
+                    <div class="icon-wrapper">
+                        <svg class="w-8 h-8 text-navy" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-gold transition">Gear Setengah</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Sistem kolaboratif yang sedang dibangun untuk pencapaian dan penyelesaian yang terus berkembang menuju kondisi lebih baik.
+                    </p>
+                </div>
+
+                <div class="filosofi-card group">
+                    <div class="icon-wrapper">
+                        <svg class="w-8 h-8 text-navy" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-gold transition">5 Kobaran Api</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Menandakan lima sikap utama: Integritas, Perubahan, Transformasi, Keberanian, dan Semangat.
+                    </p>
+                </div>
+
+                <div class="filosofi-card group">
+                    <div class="icon-wrapper">
+                        <svg class="w-8 h-8 text-navy" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-gold transition">4 Roda Gigi</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Mewakili sinergi 4 program studi: Teknik Mesin, Sipil, Industri, dan Informatika.
+                    </p>
+                </div>
+
+                <div class="filosofi-card group">
+                    <div class="icon-wrapper">
+                        <svg class="w-8 h-8 text-navy" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-gold transition">Simbol Tangan</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Bermakna panjatan doa dan harapan yang tulus akan sebuah pencapaian besar.
+                    </p>
+                </div>
+
+                <div class="filosofi-card group">
+                    <div class="icon-wrapper">
+                        <svg class="w-8 h-8 text-navy" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-gold transition">Tanda Panah</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Melambangkan arah proses dan tujuan yang jelas menuju kondisi yang lebih baik.
+                    </p>
+                </div>
+
+                <div class="filosofi-card group border-gold/30">
+                    <div class="icon-wrapper bg-gradient-to-br from-gold to-yellow-600">
+                        <svg class="w-8 h-8 text-navy" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-gold transition">Navy & Gold</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        <span class="text-blue-300">Navy:</span> Kerja sama yang tenang.<br>
+                        <span class="text-yellow-400">Gold:</span> Kesuksesan dan pencapaian.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section id="struktur" class="py-20 bg-navy relative border-t border-white/5">
+        <div class="container mx-auto px-6">
+            
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">
+                    STRUKTUR <span class="text-gold">ORGANISASI</span>
+                </h2>
+                <div class="w-24 h-1 bg-maroon mx-auto rounded-full"></div>
+            </div>
+
+            <div class="mb-20">
+                <div class="flex justify-center mb-10">
+                    <div class="org-card scale-110 border-gold shadow-[0_0_20px_rgba(251,191,36,0.2)]">
+                        <div class="img-box w-32 h-32">
+                            <img src="assets/img/nakula.jpg" onerror="this.src='https://via.placeholder.com/150'" alt="Ketua">
+                        </div>
+                        <div class="text-center mt-4">
+                            <h3 class="text-xl font-bold text-white">Nakula Sukma A.</h3>
+                            <p class="text-gold text-sm font-bold tracking-wider">KETUA UMUM</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 justify-items-center">
+                    <div class="org-card">
+                        <div class="img-box">
+                            <img src="assets/img/mohan.jpg" onerror="this.src='https://via.placeholder.com/150'" alt="Sekretaris">
+                        </div>
+                        <div class="text-center mt-4">
+                            <h3 class="text-lg font-bold text-white">Mohan</h3>
+                            <p class="text-gray-400 text-xs uppercase tracking-widest">Wakil Ketua Umum</p>
+                        </div>
+                    </div>
+                    <div class="org-card">
+                        <div class="img-box">
+                            <img src="assets/img/restu.jpg" onerror="this.src='https://via.placeholder.com/150'" alt="Bendahara 1">
+                        </div>
+                        <div class="text-center mt-4">
+                            <h3 class="text-lg font-bold text-white">Restu Tresna Aji</h3>
+                            <p class="text-gray-400 text-xs uppercase tracking-widest">Sekretaris</p>
+                        </div>
+                    </div>
+                    <div class="org-card border-maroon/40">
+                        <div class="img-box">
+                            <img src="assets/img/fitriani.jpg" onerror="this.src='https://via.placeholder.com/150'" alt="Bendahara 2">
+                        </div>
+                        <div class="text-center mt-4">
+                            <h3 class="text-lg font-bold text-white">Fitriani Jayus S.</h3>
+                            <p class="text-gray-400 text-xs uppercase tracking-widest">Bendahara</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-16">
+                <div class="flex items-center mb-8">
+                    <div class="h-px bg-white/20 flex-1"></div>
+                    <h3 class="text-2xl font-bold text-gold px-4">DEPARTEMEN RISTEK</h3>
+                    <div class="h-px bg-white/20 flex-1"></div>
+                </div>
+                
+                <div class="flex justify-center mb-8">
+                    <div class="org-card w-64 border-l-4 border-l-maroon">
+                        <div class="img-box w-24 h-24">
+                            <img src="assets/img/ence.jpg" onerror="this.src='https://via.placeholder.com/150'" alt="Koor Ristek">
+                        </div>
+                        <div class="text-center mt-3">
+                            <h4 class="text-white font-bold">Ence Faturohman</h4>
+                            <p class="text-gold text-xs">KOORDINATOR</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                    <div class="member-card">
+                        <img src="assets/img/raihan.jpg" onerror="this.src='https://via.placeholder.com/150'" class="member-img">
+                        <p class="member-name">Raihan Abiyyu F.</p>
+                    </div>
+                    <div class="member-card">
+                        <img src="assets/img/nissa.jpg" onerror="this.src='https://via.placeholder.com/150'" class="member-img">
+                        <p class="member-name">Nissa Fadilla</p>
+                    </div>
+                    <div class="member-card">
+                        <img src="assets/img/airlangga.jpg" onerror="this.src='https://via.placeholder.com/150'" class="member-img">
+                        <p class="member-name">Airlangga Putra</p>
+                    </div>
+                    <div class="member-card">
+                        <img src="assets/img/adam.jpg" onerror="this.src='https://via.placeholder.com/150'" class="member-img">
+                        <p class="member-name">Adam Nugroho</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-16">
+                <div class="flex items-center mb-8">
+                    <div class="h-px bg-white/20 flex-1"></div>
+                    <h3 class="text-2xl font-bold text-gold px-4">DEPARTEMEN KOMINFO</h3>
+                    <div class="h-px bg-white/20 flex-1"></div>
+                </div>
+
+                <div class="flex justify-center mb-8">
+                    <div class="org-card w-64 border-l-4 border-l-maroon">
+                        <div class="img-box w-24 h-24">
+                            <img src="assets/img/angga.jpg" onerror="this.src='https://via.placeholder.com/150'" alt="Koor Kominfo">
+                        </div>
+                        <div class="text-center mt-3">
+                            <h4 class="text-white font-bold">Angga Nugraha</h4>
+                            <p class="text-gold text-xs">KOORDINATOR</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex flex-wrap justify-center gap-6">
+                    <div class="member-card w-full md:w-1/4">
+                        <img src="assets/img/wildan.jpg" onerror="this.src='https://via.placeholder.com/150'" class="member-img">
+                        <p class="member-name">Wildan Septian</p>
+                    </div>
+                    <div class="member-card w-full md:w-1/4">
+                        <img src="assets/img/dwivayanti.jpg" onerror="this.src='https://via.placeholder.com/150'" class="member-img">
+                        <p class="member-name">Dwivayanti</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-16">
+                <div class="flex items-center mb-8">
+                    <div class="h-px bg-white/20 flex-1"></div>
+                    <h3 class="text-2xl font-bold text-gold px-4">DEPARTEMEN PPSDM</h3>
+                    <div class="h-px bg-white/20 flex-1"></div>
+                </div>
+
+                <div class="flex justify-center mb-8">
+                    <div class="org-card w-64 border-l-4 border-l-maroon">
+                        <div class="img-box w-24 h-24">
+                            <img src="assets/img/jefri.jpg" onerror="this.src='https://via.placeholder.com/150'" alt="Koor PPSDM">
+                        </div>
+                        <div class="text-center mt-3">
+                            <h4 class="text-white font-bold">Jefri Ahmad S.</h4>
+                            <p class="text-gold text-xs">KOORDINATOR</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                    <div class="member-card">
+                        <img src="assets/img/taulany.jpg" onerror="this.src='https://via.placeholder.com/150'" class="member-img">
+                        <p class="member-name">Taulany Shaqilla</p>
+                    </div>
+                    <div class="member-card">
+                        <img src="assets/img/ramdani.jpg" onerror="this.src='https://via.placeholder.com/150'" class="member-img">
+                        <p class="member-name">M. Nur Ramdani</p>
+                    </div>
+                    <div class="member-card">
+                        <img src="assets/img/intan.jpg" onerror="this.src='https://via.placeholder.com/150'" class="member-img">
+                        <p class="member-name">Intan Sulistianti</p>
+                    </div>
+                    <div class="member-card">
+                        <img src="assets/img/amelia.jpg" onerror="this.src='https://via.placeholder.com/150'" class="member-img">
+                        <p class="member-name">Amelia Ahmad P.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="flex items-center mb-8">
+                    <div class="h-px bg-white/20 flex-1"></div>
+                    <h3 class="text-2xl font-bold text-gold px-4">DEPARTEMEN ADVOKASI</h3>
+                    <div class="h-px bg-white/20 flex-1"></div>
+                </div>
+
+                <div class="flex justify-center mb-8">
+                    <div class="org-card w-64 border-l-4 border-l-maroon">
+                        <div class="img-box w-24 h-24">
+                            <img src="assets/img/ahmad.jpg" onerror="this.src='https://via.placeholder.com/150'" alt="Koor Advokasi">
+                        </div>
+                        <div class="text-center mt-3">
+                            <h4 class="text-white font-bold">Ahmad Fadillah</h4>
+                            <p class="text-gold text-xs">KOORDINATOR</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                    <div class="member-card">
+                        <img src="assets/img/rigal.jpg" onerror="this.src='https://via.placeholder.com/150'" class="member-img">
+                        <p class="member-name">Rigal Nurfirdaus</p>
+                    </div>
+                    <div class="member-card">
+                        <img src="assets/img/bayu.jpg" onerror="this.src='https://via.placeholder.com/150'" class="member-img">
+                        <p class="member-name">Bayu Reviadi</p>
+                    </div>
+                    <div class="member-card">
+                        <img src="assets/img/jafar.jpg" onerror="this.src='https://via.placeholder.com/150'" class="member-img">
+                        <p class="member-name">Ja'far Sulaiman</p>
+                    </div>
+                    <div class="member-card">
+                        <img src="assets/img/kamelia.jpg" onerror="this.src='https://via.placeholder.com/150'" class="member-img">
+                        <p class="member-name">Kamelia Khoerunisa</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section id="proker" class="py-20 bg-navy-light relative overflow-hidden">
+        <div class="container mx-auto px-6">
+            
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">
+                    TIMELINE <span class="text-gold">PROGRAM KERJA</span>
+                </h2>
+                <div class="w-24 h-1 bg-maroon mx-auto rounded-full"></div>
+                <p class="text-gray-400 mt-4">Agenda kegiatan Kabinet Pioneer Reformasi Periode 2025-2026</p>
+            </div>
+
+            <div class="relative wrap overflow-hidden p-4 h-full">
+                <div class="border-2-2 absolute border-opacity-20 border-gold h-full border" style="left: 50%"></div>
+
+                <div class="mb-8 flex justify-between items-center w-full right-timeline group">
+                    <div class="order-1 w-5/12"></div>
+                    <div class="z-20 flex items-center order-1 bg-gold shadow-xl w-8 h-8 rounded-full">
+                        <h1 class="mx-auto font-semibold text-lg text-navy">1</h1>
+                    </div>
+                    <div class="order-1 bg-navy border border-white/10 rounded-lg shadow-xl w-5/12 px-6 py-4 transform transition hover:scale-105 hover:border-gold">
+                        <span class="inline-block px-3 py-1 mb-2 text-xs font-bold tracking-wider text-navy bg-gold rounded-full">4 FEB 2025</span>
+                        <h3 class="mb-1 text-xl font-bold text-white">Open Volunteer</h3>
+                        <p class="text-sm text-gray-400 leading-snug">
+                            Perekrutan anggota volunteer untuk membantu kegiatan besar SEMA FT. 
+                        </p>
+                    </div>
+                </div>
+
+                <div class="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline group">
+                    <div class="order-1 w-5/12"></div>
+                    <div class="z-20 flex items-center order-1 bg-maroon shadow-xl w-8 h-8 rounded-full">
+                        <h1 class="mx-auto font-semibold text-lg text-white">2</h1>
+                    </div>
+                    <div class="order-1 bg-navy border border-white/10 rounded-lg shadow-xl w-5/12 px-6 py-4 transform transition hover:scale-105 hover:border-maroon">
+                        <span class="inline-block px-3 py-1 mb-2 text-xs font-bold tracking-wider text-white bg-maroon rounded-full">9 FEB 2026</span>
+                        <h3 class="mb-1 text-xl font-bold text-white">Lomba Cerdas Cermat</h3>
+                        <p class="text-sm text-gray-400 leading-snug">
+                            Kompetisi akademik antar mahasiswa teknik untuk mengasah wawasan. 
+                        </p>
+                    </div>
+                </div>
+
+                <div class="mb-8 flex justify-between items-center w-full right-timeline group">
+                    <div class="order-1 w-5/12"></div>
+                    <div class="z-20 flex items-center order-1 bg-gold shadow-xl w-8 h-8 rounded-full">
+                        <h1 class="mx-auto font-semibold text-lg text-navy">3</h1>
+                    </div>
+                    <div class="order-1 bg-navy border border-white/10 rounded-lg shadow-xl w-5/12 px-6 py-4 transform transition hover:scale-105 hover:border-gold">
+                        <span class="inline-block px-3 py-1 mb-2 text-xs font-bold tracking-wider text-navy bg-gold rounded-full">FEB - MAR 2026</span>
+                        <h3 class="mb-1 text-xl font-bold text-white">Bagi Takjil & Persima</h3>
+                        <p class="text-sm text-gray-400 leading-snug">
+                            Kegiatan sosial Ramadhan dan Persatuan Aspirasi Mahasiswa (20-28 Feb). 
+                        </p>
+                    </div>
+                </div>
+
+                <div class="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline group">
+                    <div class="order-1 w-5/12"></div>
+                    <div class="z-20 flex items-center order-1 bg-maroon shadow-xl w-8 h-8 rounded-full">
+                        <h1 class="mx-auto font-semibold text-lg text-white">4</h1>
+                    </div>
+                    <div class="order-1 bg-navy border border-white/10 rounded-lg shadow-xl w-5/12 px-6 py-4 transform transition hover:scale-105 hover:border-maroon">
+                        <span class="inline-block px-3 py-1 mb-2 text-xs font-bold tracking-wider text-white bg-maroon rounded-full">1 APR 2026</span>
+                        <h3 class="mb-1 text-xl font-bold text-white">Lomba Desain Poster</h3>
+                        <p class="text-sm text-gray-400 leading-snug">
+                            Ajang kreativitas desain grafis untuk mahasiswa tingkat fakultas. 
+                        </p>
+                    </div>
+                </div>
+
+                <div class="mb-8 flex justify-between items-center w-full right-timeline group">
+                    <div class="order-1 w-5/12"></div>
+                    <div class="z-20 flex items-center order-1 bg-gold shadow-xl w-8 h-8 rounded-full">
+                        <h1 class="mx-auto font-semibold text-lg text-navy">5</h1>
+                    </div>
+                    <div class="order-1 bg-navy border border-white/10 rounded-lg shadow-xl w-5/12 px-6 py-4 transform transition hover:scale-105 hover:border-gold">
+                        <span class="inline-block px-3 py-1 mb-2 text-xs font-bold tracking-wider text-navy bg-gold rounded-full">MEI - JUN 2026</span>
+                        <h3 class="mb-1 text-xl font-bold text-white">Engineering Fest (E-Fest)</h3>
+                        <p class="text-sm text-gray-400 leading-snug">
+                            Puncak acara: Turnamen Futsal (EFC) dan Kuliah Umum Industri 5.0. 
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="assets/docs/kalender-2026.pdf" download class="px-8 py-3 border border-gray-500 text-gray-300 rounded-full hover:border-gold hover:text-gold transition">
+    Unduh Kalender Akademik PDF
+                </a>
+            </div>
+
+        </div>
+    </section>
+    
+    <footer id="kontak" class="bg-navy border-t border-white/10 pt-16 pb-8">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-2xl font-bold text-white mb-6">KABINET PIONEER REFORMASI</h2>
+            <div class="flex justify-center space-x-6 mb-4"> <a href="https://instagram.com/semaft_unma" target="_blank" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-maroon transition text-white">
+        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+    </a>
+    
+    <a href="mailto:semaft.unma@gmail.com" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-gold hover:text-navy transition text-white">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+    </a>
+</div>
+
+<div class="text-center mb-8">
+    <p class="text-gray-400 text-sm">Email: <span class="text-gold font-semibold">semaft@unma.ac.id</span></p>
+</div>
+            <p class="text-gray-500 text-sm">
+                &copy; 2026 SEMA FT Universitas Majalengka. Built by <span class="text-gold">SEMA FT 2025/2026</span>.
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
