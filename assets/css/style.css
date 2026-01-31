@@ -188,10 +188,30 @@ body {
 .delay-300 { animation-delay: 0.3s; }
 /* --- STYLE SECTION FILOSOFI --- */
 
-/* Background Navy Light khusus section ini agar beda dengan header */
-.bg-navy-light {
-    background-color: #162032; /* Sedikit lebih terang dari #0f172a */
+/* --- UPDATE BACKGROUND UNTUK SEMUA HALAMAN --- */
+#home, #filosofi, #struktur, #proker {
+    /* Warna Dasar */
+    background-color: #021526; 
+    
+    /* Gambar Logo + Lapisan Gelap Transparan */
+    background-image: linear-gradient(rgba(2, 21, 38, 0.96), rgba(2, 21, 38, 0.96)), url('../img/logo-sema.png');
+    
+    background-size: 1200px; 
+    background-position: center;
+    background-repeat: no-repeat;
+
+    /* SCROLL BIASA (Agar Ringan) */
+    background-attachment: scroll; 
 }
+
+@media (min-width: 1024px) {
+    #home, #filosofi, #struktur, #proker {
+        background-attachment: fixed;
+    }
+}
+
+/* Khusus Filosofi kita beri sedikit pembeda jika mau (opsional), 
+   tapi jika ingin menyatu, biarkan kode di atas saja. */
 
 /* Kartu Filosofi */
 .filosofi-card {
